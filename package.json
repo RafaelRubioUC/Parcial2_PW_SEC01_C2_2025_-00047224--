@@ -1,0 +1,27 @@
+{
+  "name": "parcial2_pw_sec01_c2_2025_-00047224--",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RafaelRubioUC/Parcial2_PW_SEC01_C2_2025_-00047224--.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RafaelRubioUC/Parcial2_PW_SEC01_C2_2025_-00047224--/issues"
+  },
+  "homepage": "https://github.com/RafaelRubioUC/Parcial2_PW_SEC01_C2_2025_-00047224--#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

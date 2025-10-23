@@ -43,3 +43,24 @@ export const searchCuentas = (req, res) => {
 
   return res.json({ finded: true, data: matches });
 };
+
+export const getCuentasBalance = (req, res) => {
+  const cuentasActivas = cuentas.filter((c) => c.isActive === true);
+
+  if (cuentasActivas.length === 0) {
+    return res.json({
+      status: false,
+      accountBalance: 0,
+    });
+  }
+
+  const total = cuentasActivas.reduce((acum, cuenta) => {
+    const monto = parseFloat(cuenta.balance.replace("$", ""));
+    return acum + monto;
+  }, 0);
+
+  return res.json({
+    status: true,
+    accountBalance: total,
+  });
+};
